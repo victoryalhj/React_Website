@@ -1,0 +1,32 @@
+/* login */
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+/* nav */
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* menu */
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+.menu-list li {
+  padding: 10px;
+}
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
+/* input */
+.search-input {
+  border: none;
+  border-bottom: 1px solid  black;
+  padding: 5px 10px;
+  font-size: 16px;
+}
