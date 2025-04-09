@@ -10,10 +10,10 @@ const Navbar = () => {
   return (
     <div>
 
-      <div>
+      <div className="login-area">
         <div className="login-button">
           <FontAwesomeIcon icon={faUser} />
-          <div>Login</div>
+          <div className="login-text">Login</div>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
         <ul className="menu-list">
             {menuList.map((menu)=>(<li>{menu}</li>))}
         </ul>
-        <div>
+        <div className="search-area">
           <FontAwesomeIcon icon={faSearch}/>
           <input placeholder="Search" type="text" className="search-input"/>
         </div>

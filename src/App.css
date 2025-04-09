@@ -1,8 +1,14 @@
 /* login */
+.login-area {
+  margin-right: 20px;
+}
 .login-button {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
+}
+.login-text {
+  margin-left: 10px;
 }
 
 /* nav */
@@ -18,15 +24,28 @@
 }
 .menu-list li {
   padding: 10px;
+  margin-left: 10px;
 }
 .menu-area {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 /* input */
+.search-area {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 20px;
+}
 .search-input {
   border: none;
   border-bottom: 1px solid  black;
   padding: 5px 10px;
   font-size: 16px;
+  /* margin-left: auto; */
 }
