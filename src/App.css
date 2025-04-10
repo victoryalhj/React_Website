@@ -6,10 +6,19 @@
   display: flex;
   justify-content: flex-end;
   margin: 10px;
+  cursor: pointer;
+  align-items: center;
 }
 .login-text {
   margin-left: 10px;
 }
+/* login page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 
 /* nav */
 .nav-section {
@@ -47,5 +56,19 @@
   border-bottom: 1px solid  black;
   padding: 5px 10px;
   font-size: 16px;
-  /* margin-left: auto; */
+}
+
+/* product-area */
+.image-area {
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+.image-area:hover {
+  transform: scale(1.1);
+}
+
+/* product-detail */
+.product-img {
+  display: flex;
+  justify-content: flex-end;
 }

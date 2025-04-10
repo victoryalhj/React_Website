@@ -1,15 +1,20 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = ({item}) => {
+  const navigate = useNavigate();
+  const showDetail=()=>{
+    navigate(`/product/${item.id}`)
+  }
   return (
-    <div>
-      <img src="https://www.cos.com/static-images/products/assets/001/9f/b1/9fb13849cf3d3c243d30eb0e58b475149eececa6_xxl-1.jpg?imwidth=564"/>
-      <div>Conscious Choice</div>
-      <div>TWIST-DETAIL MIDI DRESS</div>
-      <div>85 GBP</div>
-      <div>NEW</div>
+    <div onClick={showDetail}>
+      <img className='image-area' src={item?.img}/>
+      <div>{item?.choice == true?"Choice":""}</div>
+      <div>{item?.title}</div>
+      <div>{item?.price}</div>
+      <div>{item?.new == true?"신제품":""}</div>
     </div>
   )
-}
+};
 
 export default ProductCard
